@@ -1,0 +1,54 @@
+.posts-container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.posts {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    width: 55%;
+    height: 100vh;
+    border-left: 0.8px solid #dedede;
+    border-right: 0.8px solid #dedede;
+    overflow: scroll;
+}
+
+.post {
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    display: flex;
+    padding: 15px;
+    height: 180px;
+    box-shadow: rgba(0, 0, 0, 0.03) 0px 10px 15px -3px,
+    rgba(0, 0, 0, 0.01) 0px 4px 6px -2px;
+    margin-bottom: 15px;
+}
+
+.avatar-column {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 15px 15px;
+    height: 100%;
+}
+
+.user-info {
+    display: flex;
+    justify-content: flex-start;
+    margin-bottom: 10px;
+}
+
+.user-info>span{
+    margin-left: 15px;
+}
+
+.title {
+    text-transform: capitalize;
+}
+
+::-webkit-scrollbar{
+    display: none;
+}

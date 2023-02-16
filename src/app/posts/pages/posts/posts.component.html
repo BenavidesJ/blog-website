@@ -1,0 +1,29 @@
+<div class="posts-container">
+    <div class="posts">
+
+        <!-- each post -->
+        <div class="post" *ngFor="let post of posts;">
+            <div class="avatar-column">
+                <div class="avatar">
+                    <h5>JB</h5>
+                </div>
+            </div>
+            <div class="post-column">
+                <div class="user-info">
+                    <h4>Jose Benavides</h4>
+                    <span>@jbenavides</span>
+                    <span>2h</span>
+                </div>
+                <div>
+                    <h4 class="title">{{ post.title }}</h4>
+                    <p class="body">{{ post.body }}</p>
+                </div>
+                <div>
+                    <!-- info de coments likes etc -->
+                </div>
+            </div>
+        </div>
+        <!-- each post -->
+
+    </div>
+</div>
