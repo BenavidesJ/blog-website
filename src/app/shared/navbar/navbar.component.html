@@ -4,5 +4,15 @@
         <h3>Blog Website</h3>
     </a>
 
+    <div class="profile">
+        <app-avatar [user]="user"></app-avatar>
+        <div class="user-info">
+            <h4>{{user.name}}</h4>
+            <small>{{user.email}}</small>
+        </div>
+        <button class="show">
+            <img src="../../../assets/icons/chevron-down.svg">
+        </button>
+    </div>
     
 </div>

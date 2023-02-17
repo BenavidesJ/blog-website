@@ -1,0 +1,19 @@
+<div class="post" *ngFor="let user of users;">
+    <div class="avatar-column">
+        <app-avatar [user]="user"></app-avatar>
+    </div>
+    <div class="post-column">
+        <div class="user-info">
+            <h4>{{user.name}}</h4>
+            <span>{{user.email}}</span>
+            <span>2h</span>
+        </div>
+        <div>
+            <h4 class="title">{{user.posts![0].title}}</h4>
+            <p class="body">{{user.posts![0].body}}</p>
+        </div>
+        <div>
+            <!-- info de coments likes etc -->
+        </div>
+    </div>
+</div>
