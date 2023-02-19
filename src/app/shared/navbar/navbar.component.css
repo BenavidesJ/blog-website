@@ -19,6 +19,7 @@
     border-radius: 12px;
     padding: 3px 5px;
     width: 250px;
+    position: relative;
 }
 
 .show {
@@ -31,13 +32,44 @@
     outline: none;
     cursor: pointer;
     transition: ease .5s;
-    transform: rotate(360deg);
+    transform: rotate(270deg);
 
 }
 .show:hover {
-    transform: rotate(180deg);
+    transform: rotate(360deg);
 }
 
 img {
     width: 20px;
+}
+
+.menu {
+    background-color: #fff;
+    position: absolute;
+    top: 80px;
+    right: 85px;
+    width: 250px;
+    z-index: 999;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    border-radius: 12px;
+    padding: 5px;
+}
+.menu ul> li{
+    list-style: none;
+}
+.menu span{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 3px 45px;
+}
+
+.menu ul> li img{
+    margin-right: 15px;
+}
+.menu span:hover{
+    cursor: pointer;
+    border-radius: 25px;
+    background-color: #00bfff71;
 }

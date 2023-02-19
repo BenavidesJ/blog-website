@@ -3,6 +3,7 @@ import { PostsService } from '../../services/posts.service';
 import { User } from '../../interfaces/users-interfaces';
 import { HttpClient } from '@angular/common/http';
 import { Post } from '../../interfaces/posts-interfaces';
+import { Observable } from 'rxjs';
 
 @Component({
   selector: 'app-posts',

@@ -10,9 +10,31 @@
             <h4>{{user.name}}</h4>
             <small>{{user.email}}</small>
         </div>
-        <button class="show">
+        <button class="show" (click)="showProfileMenu()">
             <img src="../../../assets/icons/chevron-down.svg">
         </button>
+    </div>
+    <div class="menu" *ngIf="showMenu">
+        <ul>
+            <li>
+                <span>
+                    <img src="../../../assets/icons/user.svg">
+                    <a [routerLink]="['/profile', user.id]">Profile</a>
+                </span>
+            </li>
+            <li>
+                <span>
+                    <img src="../../../assets/icons/settings.svg">
+                    <a [routerLink]="['/settings']">Settings</a>
+                </span>
+            </li>
+            <li>
+                <span>
+                    <img src="../../../assets/icons/log-out.svg">
+                    <a href="#">Log out</a>
+                </span>
+            </li>
+        </ul>
     </div>
     
 </div>

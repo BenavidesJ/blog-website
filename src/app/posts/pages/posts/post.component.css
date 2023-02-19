@@ -8,10 +8,7 @@
     align-items: center;
     display: flex;
     flex-direction: column;
-    width: 55%;
-    height: 100vh;
-    border-left: 0.8px solid #dedede;
-    border-right: 0.8px solid #dedede;
+    max-width: 55%;
     overflow: scroll;
 }
 

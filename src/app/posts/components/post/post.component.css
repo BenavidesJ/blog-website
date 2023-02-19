@@ -12,8 +12,8 @@
 
 .avatar-column {
     display: flex;
-    align-items: flex-start;
-    justify-content: flex-start;
+    align-items: center;
+    justify-content: center;
     padding: 15px 15px;
     height: 100%;
 }
@@ -30,4 +30,8 @@
 
 .title {
     text-transform: capitalize;
+    font-size: 1em;
+}
+.body {
+    font-size: 1em;
 }
